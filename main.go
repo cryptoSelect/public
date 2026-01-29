@@ -2,8 +2,9 @@ package main
 
 import (
 	"log"
-	"public/database"
-	"public/models"
+
+	"github.com/cryptoSelect/public/database"
+	"github.com/cryptoSelect/public/models"
 )
 
 func main() {
