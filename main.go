@@ -13,7 +13,7 @@ func main() {
 
 	// 方法1: 自动迁移（推荐用于生产环境）
 	// 会自动创建表，如果表已存在则只更新结构
-	err := database.AutoMigrate(&models.SymbolRecord{})
+	err := database.AutoMigrate(&models.SymbolRecord{}, &models.UserInfo{}, &models.Subscription{})
 	if err != nil {
 		log.Fatalf("Migration failed: %v", err)
 	}
